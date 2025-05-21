@@ -5,7 +5,6 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     buildCommand: ""
-    startCommand: "apache2-foreground"
     envVars:
       - key: APP_KEY
         generateValue: true
