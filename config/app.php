@@ -169,6 +169,10 @@ return [
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
+        // Barryvdh\Debugbar\ServiceProvider::class,
+        // Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        // Laravel\Telescope\TelescopeServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -193,6 +197,8 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'DotenvEditor' => Brotzka\DotenvEditor\DotenvEditorFacade::class,
+        'IdeHelper' => Barryvdh\LaravelIdeHelper\Facade::class,
+
     ])->toArray(),
 
 ];
